@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#48426D"
+    tools:context=".CartActivity">
+
+    <ListView
+        android:id="@+id/CartProductsList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price : "
+        android:textColor="#F0C38E"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/priceText"
+        app:layout_constraintEnd_toStartOf="@+id/proceedBtn"
+        app:layout_constraintStart_toStartOf="@+id/proceedBtn" />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="67dp"
+        android:text="Price"
+        android:textColor="#F0C38E"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/BottomNav"
+        app:layout_constraintStart_toEndOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/proceedBtn"
+        android:layout_width="189dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:background="#312C51"
+        android:text="Proceed to checkout"
+        android:textColor="#F1AA98"
+        app:layout_constraintBottom_toTopOf="@+id/BottomNav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottomNav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemTextColor="#F1AA98"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navmenu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#48426D"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/currBtn"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="#312C51"
+        android:text="Use Current Location"
+        android:layout_margin="5dp"
+        android:textColor="#F1AA98" />
+
+    <SearchView
+        android:id="@+id/searchLocBtn"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:queryHint="Enter location"></SearchView>
+
+    <EditText
+        android:id="@+id/locTxt"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textColor="#F0C38E" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="400dp"
+        android:layout_height="512dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        tools:context=".MapsActivity" />
+
+    <Button
+        android:id="@+id/orderBtn"
+        android:layout_width="107dp"
+        android:layout_height="64dp"
+        android:layout_margin="5dp"
+        android:background="#312C51"
+        android:text="Order"
+        android:textColor="#F1AA98" />
+
+</LinearLayout>
